@@ -1,0 +1,19 @@
+
+sudo yum install nginx
+sudo systemctl enable nginx
+sudo systemctl start nginx
+sudo systemctl status nginx
+sudo mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.bkup
+sudo vim /etc/nginx/nginx.conf and paste privateIP of tomcatservers
+sudo nginx -t
+sudo nginx -s reload
+sudo systemctl start nginx
+
+# start nginx on browser – PublicIP/app.war
+#f you see Error 502 – Bad gateway
+If SELinux is on and you're experiencing this, you might try setting httpd_can_network_connect to true, and then restarting nginx:
+
+setsebool -P httpd_can_network_connect true
+
+RUN steps 8, 9, 10 again
+
