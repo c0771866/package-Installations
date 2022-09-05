@@ -24,10 +24,9 @@ sudo yum install java-11-openjdk-devel java-1.8.0-openjdk-devel -y
 java -version
 git –version 
 
-# Download tomcat software and extract it.
 ```
-### Install Tomcat version 9.0.64
-``` sh
+### Install Tomcat version 9.0.65
+``` # Download tomcat software and extract it.
 sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.65/bin/apache-tomcat-9.0.65.tar.gz
 sudo tar -xvf apache-tomcat-9.0.65.tar.gz
 sudo rm apache-tomcat-9.0.65.tar.gz
