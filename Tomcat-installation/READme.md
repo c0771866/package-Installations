@@ -23,7 +23,7 @@ cd /opt
 sudo yum install git wget vim -y
 sudo yum install java-11-openjdk-devel java-1.8.0-openjdk-devel -y
 java -version
-git –version 
+git -–version 
 
 ```
 ### Install Tomcat version 9.0.65
