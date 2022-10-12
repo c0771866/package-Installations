@@ -55,9 +55,13 @@ echo  'run_as_user="nexus" ' > /opt/nexus/bin/nexus.rc
 
 ##  CONFIGURE NEXUS TO RUN AS A SERVICE 
 ```sh
-sudo yum install -y initscripts (for fedora/centOS)
+(for fedora/centOS)
+- sudo yum install -y initscripts 
+- switch back to root user
 
 sudo ln -s /opt/nexus/bin/nexus /etc/init.d/nexus
+
+
 
 #9 Enable and start the nexus services
 sudo systemctl enable nexus
