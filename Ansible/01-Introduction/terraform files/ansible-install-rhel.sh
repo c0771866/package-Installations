@@ -1,7 +1,7 @@
 #! /bin/bash
+sudo hostnamectl set-hostname ansible
 sudo useradd ansible
 echo "ansible:ansible" | chpasswd
-sudo hostname ansible
 echo "ansible ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/ansible
 sudo su - ansible
 # Enable PassowrdLogin and assign password to ansible user
