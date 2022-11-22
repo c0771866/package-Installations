@@ -20,6 +20,7 @@ https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.ht
   $ sudo apt install software-properties-common
   $ sudo add-apt-repository --yes --update ppa:ansible/ansible
   $ sudo apt install ansible -y
+  $ sudo chown ansible -R /etc/ansible/
 
 ## **Ansible installation on REDHAT EC2**
 #
