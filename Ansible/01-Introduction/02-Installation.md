@@ -16,7 +16,9 @@ https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.ht
   $ sudo adduser ansible \
   $ echo "ansible ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/ansible \
   $ sudo su - ansible \
-  $ sudo apt-add-repository ppa:ansible/ansible \
+  $ sudo apt update
+  $ sudo apt install software-properties-common
+  $ sudo add-apt-repository --yes --update ppa:ansible/ansible
   $ sudo apt install ansible -y
 
 ## **Ansible installation on REDHAT EC2**
